@@ -4,11 +4,9 @@ import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import {
   Heart,
   Users,
@@ -26,9 +24,13 @@ import {
   Globe,
   ChevronLeft,
   ChevronRight,
+  MessageCircleHeart,
 } from "lucide-react";
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import { profesionalData } from "./(data)/profesionalData";
+import ProfesionalCard from "./(root)/Components/ProfesionalCard";
+import PsychologyDivider from "./(root)/Components/whyUS/WhyUs";
 
 export default function HomePage() {
   const [isVisible, setIsVisible] = useState(false);
@@ -37,6 +39,9 @@ export default function HomePage() {
   useEffect(() => {
     setIsVisible(true);
   }, []);
+
+  const coordinadoras = profesionalData.filter((p) => p.cordinadora);
+  const noCoordinadoras = profesionalData.filter((p) => !p.cordinadora);
 
   const testimonials = [
     {
@@ -130,10 +135,10 @@ export default function HomePage() {
                 Red de Psicologos Online
               </h2>
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed animate-fade-in-up animation-delay-200">
-                Servicios de psicología online para personas de habla hispana.
-                Trabajamos desde modelos psicoanalíticos, psicología
-                integrativa, Terapia Individual Sistémica, Orientacion
-                Vocacional y Ocupacional.
+                Psicoterapia online para personas de habla hispana, en cualquier
+                lugar del mundo. Acompañamos procesos desde los modelos
+                Psicoanalítico, Psicología integrativa, Terapia Sistémica,
+                Orientacion Vocacional y Ocupacional, Proyectos de vida.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in-up animation-delay-400">
                 <Button
@@ -146,16 +151,15 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="relative animate-fade-in-up animation-delay-600">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative animate-fade-in-up animation-delay-600 py-24">
+              <div className="relative rounded-2xl overflow-hidden ">
                 <Image
-                  src="https://res.cloudinary.com/db3krhfka/image/upload/v1755548539/png-transparent-woman-raising-her-hands-woman-smile-female-happy-women-day-company-photography-people-removebg-preview_pyg8y2.png"
+                  src="https://res.cloudinary.com/dc8aa3b1b/image/upload/v1758562858/6330601-removebg-preview_lgnzdh.png"
                   alt="Psicóloga profesional en sesión online"
-                  width={600}
-                  height={600}
-                  className="w-full h-auto object-cover"
+                  width={1200}
+                  height={1200}
+                  className="w-full h-full object-contain"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
               </div>
               <div className="absolute -bottom-6 -left-6 bg-card rounded-lg p-4 shadow-lg border border-border">
                 <div className="flex items-center space-x-2">
@@ -176,12 +180,12 @@ export default function HomePage() {
           {/* Stats Section */}
 
           {/* Jung Quote */}
-          <div className="mt-16 p-6 bg-card rounded-lg border border-border transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+          <div className="mt-16 flex flex-col  w-full p-6 bg-card rounded-lg border border-border transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
             <blockquote className="text-lg italic text-muted-foreground font-medium">
-              `&quot;`Conoce todas las teorías, domina todas las técnicas, pero al
-              tocar un alma humana, sé apenas otra alma humana`&quot;`
+              `&quot;`Conoce todas las teorías, domina todas las técnicas, pero
+              al tocar un alma humana, sé apenas otra alma humana`&quot;`
             </blockquote>
-            <cite className="text-accent font-semibold mt-2 block">
+            <cite className="text-accent flex items-end justify-end font-semibold mt-2  w-full">
               — Carl Jung
             </cite>
           </div>
@@ -193,7 +197,7 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
             <div className="relative">
               <img
-                src="https://conectacyl.es/img/slider-1.jpg"
+                src="https://res.cloudinary.com/dc8aa3b1b/image/upload/v1758563139/WhatsApp_Image_2025-09-20_at_11.06.03_AM_j42c8g.jpg"
                 alt="Personas en terapia grupal"
                 className="rounded-2xl shadow-xl w-full h-[600px] object-cover"
               />
@@ -205,27 +209,31 @@ export default function HomePage() {
               </h3>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                 Cada persona es única, y por eso nuestro enfoque es
-                 personalizado. Creemos en la importancia del
-                trabajo profesional y especializado, en la contención al sujeto
-                que comienza el camino de un proceso psicoterapéutico.
+                personalizado. Creemos en la importancia del trabajo profesional
+                y especializado, en la contención al sujeto que comienza el
+                camino de un proceso psicoterapéutico.
               </p>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <Heart className="h-6 w-6 text-accent mt-1 flex-shrink-0" />
                   <div>
+                    <h4 className="font-semibold text-foreground">Empatía</h4>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <MessageCircleHeart className="h-6 w-6 text-accent mt-1 flex-shrink-0" />
+                  <div>
                     <h4 className="font-semibold text-foreground">
-                      Empatía
+                      Acompañamiento cercano
                     </h4>
-
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <Users className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold text-foreground">
-                      Vínculo terapéutico cercano.
+                      Vínculo terapéutico.
                     </h4>
-
                   </div>
                 </div>
               </div>
@@ -238,7 +246,7 @@ export default function HomePage() {
       <section className="py-20 px-4 container mx-auto max-w-6xl">
         <div className="container mx-auto">
           <h3 className="text-3xl font-bold font-serif text-center mb-12 text-foreground">
-            ¿Por Qué Elegir RE-PENSARSE?
+            ¿Por qué elegir Re-Pensarse?
           </h3>
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="border-border hover:shadow-lg transition-shadow">
@@ -265,8 +273,8 @@ export default function HomePage() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground text-center">
-                  Todos nuestros psicólogos están certificados y tienen amplia
-                  experiencia clínica.
+                  Nuestra Red está integrada por Psicólogos certificados y con
+                  vasta experiencia clínica
                 </p>
               </CardContent>
             </Card>
@@ -278,7 +286,8 @@ export default function HomePage() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground text-center">
-                  Atendemos a pacientes de habla hispana en el mundo
+                  Atendemos a pacientes y consultantes de habla hispana en
+                  cualquier lugar del mundo
                 </p>
               </CardContent>
             </Card>
@@ -387,120 +396,15 @@ export default function HomePage() {
           <h3 className="text-3xl font-bold font-serif text-center mb-12 text-foreground">
             Nuestros Profesionales
           </h3>
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="border-border hover:shadow-lg transition-all duration-300 transform hover:scale-105">
-              <CardHeader className="text-center">
-                <div className="mx-auto mb-4 relative">
-                  <Image
-                    width={100}
-                    height={100}
-                    src="/silvina.jpeg"
-                    alt="Lic. Silvina Vázquez"
-                    className="w-24 h-24 rounded-full object-cover mx-auto border-4 border-accent/20"
-                  />
-                </div>
-                <CardTitle className="font-serif text-accent">
-                  Lic. Silvina Vázquez
-                </CardTitle>
-                <CardDescription>
-                  Universidad de Buenos Aires (UBA)
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-3 flex justify-center items-center flex-col">
-                <Badge
-                  variant="secondary"
-                  className="bg-primary/10 text-primary"
-                >
-                  Ex Inspectora PCyPS - DGCyE
-                </Badge>
-                <Badge
-                  variant="secondary"
-                  className="bg-primary/10 text-primary"
-                >
-                  Capacitadora Docente CIIE
-                </Badge>
-                <p className="text-muted-foreground">
-                  Especialista en psicoterapia de jóvenes, adultos y parejas.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-border hover:shadow-lg transition-all duration-300 transform hover:scale-105">
-              <CardHeader className="text-center">
-                <div className="mx-auto mb-4 relative">
-                  <Image
-                    width={100}
-                    height={100}
-                    src="/lilians.jpeg"
-                    alt="Lic. Lilians Dotti Quintana"
-                    className="w-24 h-24 rounded-full object-cover mx-auto border-4 border-accent/20"
-                  />
-                </div>
-                <CardTitle className="font-serif text-accent">
-                  Lic. Lilians Dotti Quintana
-                </CardTitle>
-                <CardDescription>
-                  Universidad de la República Oriental del Uruguay (UdelaR)
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-3 flex justify-center items-center flex-col">
-                <Badge
-                  variant="secondary"
-                  className="bg-primary/10 text-primary"
-                >
-                  Docente de nivel Universitario y Secundario
-                </Badge>
-                
-                <Badge
-                  variant="secondary"
-                  className="bg-primary/10 text-primary"
-                >
-                  Modelo Sistémico
-                </Badge>
-                <p className="text-muted-foreground">
-                  Formación en grupos, terapia sistémica y orientación
-                  vocacional.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-border hover:shadow-lg transition-all duration-300 transform hover:scale-105">
-              <CardHeader className="text-center">
-                <div className="mx-auto mb-4 relative">
-                  <Image
-                    width={100}
-                    height={100}
-                    src="/psicologa1.jpg"
-                    alt="Lic. Rocío Palacio"
-                    className="w-24 h-24 rounded-full object-cover mx-auto border-4 border-accent/20"
-                  />
-                </div>
-                <CardTitle className="font-serif text-accent">
-                  Lic. Rocío Palacio
-                </CardTitle>
-                <CardDescription>
-                  Universidad de Buenos Aires (UBA)
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-3 flex justify-center items-center flex-col">
-                <Badge
-                  variant="secondary"
-                  className="bg-primary/10 text-primary"
-                >
-                  Psicodiagnóstico
-                </Badge>
-                <Badge
-                  variant="secondary"
-                  className="bg-primary/10 text-primary"
-                >
-                  Orientación Vocacional
-                </Badge>
-                <p className="text-muted-foreground">
-                  Especialista en psicoterapia y orientación para adolescentes y
-                  adultos.
-                </p>
-              </CardContent>
-            </Card>
+          <div className="grid md:grid-cols-2 gap-8">
+            {coordinadoras.map((prof) => (
+              <ProfesionalCard key={prof.nombre} prof={prof} />
+            ))}
+          </div>
+          <div className="grid md:grid-cols-3 gap-8 !mt-12">
+            {noCoordinadoras.map((prof) => (
+              <ProfesionalCard key={prof.nombre} prof={prof} />
+            ))}
           </div>
         </div>
       </section>
@@ -537,8 +441,8 @@ export default function HomePage() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground text-center mb-4">
-                  Sesiones grupales para explorar opciones académicas y
-                  profesionales.
+                  Encuentros grupales e individuales, para explorar opciones
+                  académicas y profesionales
                 </p>
                 <Button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
                   Inscribirse
@@ -564,8 +468,9 @@ export default function HomePage() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  Capacitación especializada en psicología educativa y manejo de
-                  grupos.
+                  Capacitación especializada en diferentes ramas de la
+                  Psicología y la Salud Mental, como Psicología Educativa,
+                  Psicología Evolutiva, Manejo de Grupos, y temas emergentes.
                 </p>
                 <Button
                   variant="outline"
@@ -584,7 +489,8 @@ export default function HomePage() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  Formación continua en nuevas técnicas y enfoques terapéuticos.
+                  Formación continua en diferentes técnicas y enfoques
+                  terapéuticos.
                 </p>
                 <Button
                   variant="outline"
@@ -616,6 +522,11 @@ export default function HomePage() {
             </Card>
           </div>
         </div>
+      </section>
+
+      {/*Why US */}
+      <section>
+        <PsychologyDivider />
       </section>
 
       {/* Testimonials Section */}
@@ -695,7 +606,6 @@ export default function HomePage() {
       </section>
 
       {/* Pricing Section */}
-      
 
       {/* Enhanced Contact Section */}
       <section id="contacto" className="py-20 px-4">
@@ -736,7 +646,7 @@ export default function HomePage() {
                   <div className="flex items-center space-x-3">
                     <Mail className="h-5 w-5 text-accent" />
                     <span className="text-muted-foreground">
-                      repensarseonline@gmail.com
+                      repensarse.online@gmail.com
                     </span>
                   </div>
                   <div className="flex items-center space-x-3">
@@ -768,8 +678,8 @@ export default function HomePage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground mb-6">
-                    Agenda tu primera consulta para conocer nuestros
-                    servicios y encontrar el profesional adecuado para ti.
+                    Agenda tu primera consulta para conocer nuestros servicios y
+                    encontrar el profesional adecuado para ti.
                   </p>
                   <div className="space-y-3">
                     <Button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground transform hover:scale-105 transition-all duration-300">
@@ -798,8 +708,8 @@ export default function HomePage() {
             ¿Listo para Comenzar tu Proceso Psicoterapeutico?
           </h3>
           <p className="text-xl text-muted-foreground mb-8">
-            No esperes más. Tu bienestar mental es nuestra prioridad. Comienza
-            hoy mismo con una consulta gratuita.
+            No esperes más. Tu bienestar y salud integral es nuestra prioridad.
+            Comienza hoy mismo.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
@@ -838,7 +748,7 @@ export default function HomePage() {
             <span>•</span>
             <span>repensarseonline.com</span>
           </div>
-          <div className="flex justify-center space-x-4">
+          <div className="flex items-center justify-center space-x-4">
             <Button
               variant="ghost"
               size="sm"
@@ -853,6 +763,13 @@ export default function HomePage() {
             >
               Política de Privacidad
             </Button>
+                <a
+              href="https://forms.gle/sJm9GuZMWnbcxf7q6"
+              
+              className="hover:bg-accent/10 transform hover:scale-105 transition-all duration-300"
+            >
+              Querés pertenecer a nuestra Red?
+            </a>
           </div>
         </div>
       </footer>
