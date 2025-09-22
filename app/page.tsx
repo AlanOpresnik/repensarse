@@ -146,7 +146,7 @@ export default function HomePage() {
                   className="bg-accent hover:bg-accent/90 text-accent-foreground transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
                 >
                   <MessageCircle className="mr-2 h-5 w-5" />
-                  Contactar por WhatsApp
+                  Contactar por WhatsApp 
                 </Button>
               </div>
             </div>
@@ -154,11 +154,11 @@ export default function HomePage() {
             <div className="relative animate-fade-in-up animation-delay-600 py-24">
               <div className="relative rounded-2xl overflow-hidden ">
                 <Image
-                  src="https://res.cloudinary.com/dc8aa3b1b/image/upload/v1758562858/6330601-removebg-preview_lgnzdh.png"
+                  src="https://res.cloudinary.com/dc8aa3b1b/image/upload/v1758563880/vista-lateral-joven-hablando-con-terapeuta_lc2zkh.webp"
                   alt="Psicóloga profesional en sesión online"
                   width={1200}
                   height={1200}
-                  className="w-full h-full object-contain"
+                  className="w-full h-full object-cover"
                 />
               </div>
               <div className="absolute -bottom-6 -left-6 bg-card rounded-lg p-4 shadow-lg border border-border">
