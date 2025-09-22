@@ -40,6 +40,18 @@ export const profesionalData: Profesional[] = [
     curriculum:
       "https://drive.google.com/file/d/1AIxYmCLD04azCnA-MZJSJSoq2n8ugI8d/view",
   },
+      {
+    cordinadora: false,
+    nombre: "Lic. Silvia Mónica Fernández.",
+    imagen: "https://res.cloudinary.com/dc8aa3b1b/image/upload/v1758564951/WhatsApp_Image_2025-09-22_at_11.15.18_AM_ujcfnd.jpg",
+    universidad: "Universidad de Buenos Aires (UBA)",
+    especialidades: [
+      " Psicoterapia de Jóvenes, Adultos, Pareja. ",
+      "Especialista en Terapia Familiar Sistémica.",
+      "Psicologa clinica con 25 años de experiencia"
+    ],
+    curriculum: 'https://docs.google.com/document/d/1HUW8G25CLICiOwyldQSNwVbVOmYW1_oN/edit?usp=sharing&ouid=109163468251593264356&rtpof=true&sd=true'
+  },
   {
     cordinadora: false,
     nombre: "Lic. Sonia de Leon",
@@ -64,15 +76,5 @@ export const profesionalData: Profesional[] = [
     ],
     curriculum: 'https://docs.google.com/document/d/1HUW8G25CLICiOwyldQSNwVbVOmYW1_oN/edit?usp=sharing&ouid=109163468251593264356&rtpof=true&sd=true'
   },
-       {
-    cordinadora: false,
-    nombre: "Lic. Silvia Mónica Fernández.",
-    imagen: "https://res.cloudinary.com/dc8aa3b1b/image/upload/v1758561793/WhatsApp_Image_2025-09-22_at_10.22.25_AM_kh1ehv.jpg",
-    universidad: "Universidad de Buenos Aires (UBA)",
-    especialidades: [
-      " Psicoterapia de Jóvenes, Adultos, Pareja. ",
-      "Especialista en Terapia Familiar Sistémica.",
-    ],
-    curriculum: 'https://docs.google.com/document/d/1HUW8G25CLICiOwyldQSNwVbVOmYW1_oN/edit?usp=sharing&ouid=109163468251593264356&rtpof=true&sd=true'
-  },
+   
 ];

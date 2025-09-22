@@ -401,7 +401,7 @@ export default function HomePage() {
               <ProfesionalCard key={prof.nombre} prof={prof} />
             ))}
           </div>
-          <div className="grid md:grid-cols-3 gap-8 !mt-12">
+          <div className="grid md:grid-cols-4 gap-8 !mt-12">
             {noCoordinadoras.map((prof) => (
               <ProfesionalCard key={prof.nombre} prof={prof} />
             ))}

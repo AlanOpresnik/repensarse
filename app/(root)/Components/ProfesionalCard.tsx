@@ -38,7 +38,7 @@ export default function ProfesionalCard({ prof }: Props) {
           </div>
         ))}
 
-        <p className="text-muted-foreground">
+        <p className="text-muted-foreground text-center">
           Especialista en psicoterapia de jóvenes, adultos y parejas.
         </p>
       </CardContent>
