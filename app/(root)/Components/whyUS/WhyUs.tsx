@@ -45,11 +45,11 @@ export default function PsychologyDivider() {
           <div className="flex-1 ">
             <div className="relative">
               <Image
-                src="https://www.anahuac.mx/mexico/EscuelasyFacultades/psicologia/sites/default/files/noticias/PSI_Articulo_Dia_Psicologo_ok.jpg"
+                src="https://res.cloudinary.com/dc8aa3b1b/image/upload/v1758562858/6330601-removebg-preview_lgnzdh.png"
                 alt="Ilustración de psicología y mente humana"
-                width={420}
+                width={620}
                 height={400}
-                className="rounded-lg shadow-2xl w-full h-[500px]"
+                className="rounded-lg  w-full "
               />
             </div>
           </div>

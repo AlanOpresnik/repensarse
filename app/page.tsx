@@ -75,7 +75,7 @@ export default function HomePage() {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background overflow-hidden">
       {/* Header */}
       <header className="border-b border-border bg-card/50 backdrop-blur-sm sticky top-0 z-50 transition-all duration-300">
         <div className="container mx-auto px-4 py-4">
@@ -273,7 +273,7 @@ export default function HomePage() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground text-center">
-                  Nuestra Red está integrada por Psicólogos certificados y con
+                  Nuestra Red está integrada por Psicólogos matriculados y con
                   vasta experiencia clínica
                 </p>
               </CardContent>
