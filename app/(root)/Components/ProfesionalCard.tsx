@@ -27,7 +27,7 @@ export default function ProfesionalCard({ prof }: Props) {
             className="w-24 h-24 rounded-full object-cover mx-auto border-4 border-accent/20"
           />
         </div>
-        <p className={` ${prof.cordinadora ? 'bg-indigo-700 text-white p-2 rounded-full text-sm absolute right-0 top-[-10px]' : 'hidden'} `}>{prof.cordinadora ? 'Cordinadora de Re-pensarse' : ''}</p>
+        <p className={` ${prof.cordinadora ? 'bg-indigo-700 text-white p-2 rounded-full text-sm absolute right-0 top-[-10px]' : 'hidden'} `}>{prof.cordinadora ? 'Coordinadora de Re-Pensarse' : ''}</p>
         <CardTitle className="font-serif text-accent">{prof.nombre}</CardTitle>
         <CardDescription>{prof.universidad}</CardDescription>
       </CardHeader>
@@ -38,9 +38,7 @@ export default function ProfesionalCard({ prof }: Props) {
           </div>
         ))}
 
-        <p className="text-muted-foreground text-center">
-          Especialista en psicoterapia de jóvenes, adultos y parejas.
-        </p>
+   
       </CardContent>
       <CardFooter className="flex justify-center">
         <a

@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function PsychologyDivider() {
   return (
     <div className="w-full max-w-7xl mx-auto my-12">
-      <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-blue-600 via-blue-500 to-gray-400 ">
+      <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-[#7174f2] via-[#7174f2]/80 to-gray-400 ">
         <div className="flex flex-col lg:flex-row items-center gap-8">
           {/* Content Section */}
           <div className="flex-1 text-white p-8 md:p-12">
@@ -36,20 +36,20 @@ export default function PsychologyDivider() {
             </ul>
 
             {/* CTA Button */}
-            <button className="bg-orange-400 hover:bg-orange-500 text-white font-semibold px-6 py-3 rounded-full transition-colors duration-200 shadow-lg">
+            <button className="bg-[#cf6c51] hover:bg-orange-500 text-white font-semibold px-6 py-3 rounded-full transition-colors duration-200 shadow-lg">
               Comenzar mi proceso
             </button>
           </div>
 
           {/* Image Section */}
-          <div className="flex-1 ">
+          <div className="flex-1 p-0">
             <div className="relative">
               <Image
-                src="https://res.cloudinary.com/dc8aa3b1b/image/upload/v1758562858/6330601-removebg-preview_lgnzdh.png"
+                src="https://res.cloudinary.com/dbgt948uj/image/upload/v1758754059/chica-joven-que-habla-con-la-vista-lateral-del-terapeuta_ujzehn.webp"
                 alt="Ilustración de psicología y mente humana"
-                width={620}
+                width={820}
                 height={400}
-                className="rounded-lg  w-full "
+                className="rounded-lg  h-[500px] w-full object-cover "
               />
             </div>
           </div>

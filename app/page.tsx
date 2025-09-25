@@ -1,12 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   Heart,
   Users,
@@ -124,7 +119,7 @@ export default function HomePage() {
 
       {/* Hero Section */}
       <section
-        className={`py-20 px-4 bg-gradient-to-br from-accent/5 to-primary/5 transition-all duration-1000 ${
+        className={`py-16 px-4 bg-gradient-to-br from-accent/5 to-primary/5 transition-all duration-1000 ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
       >
@@ -132,13 +127,13 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
               <h2 className="text-4xl md:text-6xl font-bold font-serif text-foreground mb-6 animate-fade-in-up">
-                Red de Psicologos Online
+                Red de Psicólogos Online
               </h2>
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed animate-fade-in-up animation-delay-200">
-                Psicoterapia online para personas de habla hispana, en cualquier
+                Psicoterapia online para personas de habla hispana en cualquier
                 lugar del mundo. Acompañamos procesos desde los modelos
-                Psicoanalítico, Psicología integrativa, Terapia Sistémica,
-                Orientacion Vocacional y Ocupacional, Proyectos de vida.
+                Psicoanalítico, Psicología Integrativa, Terapia Sistémica,
+                Orientación Vocacional y Ocupacional, y Proyectos de Vida.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in-up animation-delay-400">
                 <Button
@@ -146,7 +141,7 @@ export default function HomePage() {
                   className="bg-accent hover:bg-accent/90 text-accent-foreground transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
                 >
                   <MessageCircle className="mr-2 h-5 w-5" />
-                  Contactar por WhatsApp 
+                  Contactar por WhatsApp
                 </Button>
               </div>
             </div>
@@ -161,7 +156,7 @@ export default function HomePage() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute -bottom-6 -left-6 bg-card rounded-lg p-4 shadow-lg border border-border">
+              <div className="absolute -bottom-[-60px] -left-6 bg-card rounded-lg p-4 shadow-lg border border-border">
                 <div className="flex items-center space-x-2">
                   <Shield className="h-6 w-6 text-accent" />
                   <div>
@@ -205,7 +200,7 @@ export default function HomePage() {
             </div>
             <div>
               <h3 className="text-3xl font-bold font-serif mb-6 text-foreground">
-                Red de psicologos para personas de habla Hispana
+                Red de Psicólogos para personas de habla hispana, en cualquier lugar del mundo
               </h3>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                 Cada persona es única, y por eso nuestro enfoque es
@@ -509,8 +504,8 @@ export default function HomePage() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  Capacitación para asistentes personales y acompañantes
-                  terapéuticos.
+                  Capacitación para Asistentes Personales y Acompañantes
+                  Terapéuticos.
                 </p>
                 <Button
                   variant="outline"
@@ -616,9 +611,11 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-3 gap-8">
             <div className="lg:col-span-1">
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
-                <img
-                  src="https://lamenteesmaravillosa.com/wp-content/uploads/2017/09/figuras-de-piedra-tocandose-el-pecho-420x255.jpg"
+                <Image
+                  src="https://res.cloudinary.com/dbgt948uj/image/upload/v1758754594/mujer-haciendo-una-llamada-de-video-en-casa-en-una-computadora-portatil-con-auriculares_srybvo.webp"
                   alt="Contacto profesional"
+                  width={400}
+                  height={400}
                   className="w-full h-[400px] object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent"></div>
@@ -763,9 +760,8 @@ export default function HomePage() {
             >
               Política de Privacidad
             </Button>
-                <a
+            <a
               href="https://forms.gle/sJm9GuZMWnbcxf7q6"
-              
               className="hover:bg-accent/10 transform hover:scale-105 transition-all duration-300"
             >
               Querés pertenecer a nuestra Red?
