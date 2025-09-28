@@ -11,7 +11,7 @@ export default function PsychologyDivider() {
               ¿Por qué Re-Pensarse?
             </h2>
             <p className="text-lg mb-6 text-blue-50 leading-relaxed">
-              Porque significa reflexionar y plantearte el mismo tema
+              Porque Re-Pensarse significa reflexionar y plantearte el mismo tema
               detenidamente, desde una perspectiva diferente, visualizando otros
               escenarios posibles. Además, Re-Pensar, es distinto de pensar
               demasiado, y eso es posible junto a un profesional que te guíe, te

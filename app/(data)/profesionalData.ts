@@ -25,7 +25,7 @@ export const profesionalData: Profesional[] = [
       "Orientación Vocacional y Proyecto de Vida",
     ],
     curriculum:
-      "https://drive.google.com/file/d/1WEWX-GBek3TdPlwzY_jtq5Dcwo5N03nF/view?usp=sharing",
+      "https://drive.google.com/file/d/18Cdz3FAV1Oiwb4yvg3Teg68iN7ixBxdb/view?usp=sharing",
   },
   {
     cordinadora: false,
@@ -52,7 +52,7 @@ export const profesionalData: Profesional[] = [
       "Psicologa Clinica con 25 años de Experiencia",
     ],
     curriculum:
-      "https://docs.google.com/document/d/1HUW8G25CLICiOwyldQSNwVbVOmYW1_oN/edit?usp=sharing&ouid=109163468251593264356&rtpof=true&sd=true",
+      "https://drive.google.com/file/d/1rkMq1L_smigrNp9C3z5JhgwoSGl4G1GG/view?usp=sharing",
   },
   {
     cordinadora: false,
@@ -80,6 +80,6 @@ export const profesionalData: Profesional[] = [
       "Especialización en TDAH",
     ],
     curriculum:
-      "https://docs.google.com/document/d/1HUW8G25CLICiOwyldQSNwVbVOmYW1_oN/edit?usp=sharing&ouid=109163468251593264356&rtpof=true&sd=true",
+      "https://drive.google.com/file/d/1z-JZ0MqGuWAWFcXW9DMXJvx7TRtOEULF/view?usp=sharing",
   },
 ];

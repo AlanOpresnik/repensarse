@@ -10,6 +10,9 @@ const nextConfig: NextConfig = {
       },{
         protocol:'https',
         hostname:'www.anahuac.mx'
+      },{
+        protocol:'https',
+        hostname:'cdn-icons-png.flaticon.com'
       }
     ]
   }

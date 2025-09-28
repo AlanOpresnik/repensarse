@@ -5,31 +5,29 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   Heart,
   Users,
-  Brain,
   Clock,
   MessageCircle,
   BookOpen,
   Mail,
   MapPin,
-  Star,
   Shield,
   Award,
-  ArrowRight,
   Calendar,
   Globe,
-  ChevronLeft,
-  ChevronRight,
   MessageCircleHeart,
+  InstagramIcon,
+  HeartPulse,
 } from "lucide-react";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { profesionalData } from "./(data)/profesionalData";
 import ProfesionalCard from "./(root)/Components/ProfesionalCard";
 import PsychologyDivider from "./(root)/Components/whyUS/WhyUs";
+import WhatsAppButton from "@/components/ui/WatshappButonn/WhatsApp";
+import ModelosCards from "./(root)/Components/TerapicModels/TerapicModels";
 
 export default function HomePage() {
   const [isVisible, setIsVisible] = useState(false);
-  const [activeTestimonial, setActiveTestimonial] = useState(0);
 
   useEffect(() => {
     setIsVisible(true);
@@ -38,36 +36,9 @@ export default function HomePage() {
   const coordinadoras = profesionalData.filter((p) => p.cordinadora);
   const noCoordinadoras = profesionalData.filter((p) => !p.cordinadora);
 
-  const testimonials = [
-    {
-      name: "María González",
-      text: "La terapia online me cambió la vida. Encontré la ayuda que necesitaba desde la comodidad de mi hogar.",
-      rating: 5,
-      image: "/placeholder.svg?height=80&width=80",
-    },
-    {
-      name: "Carlos Rodríguez",
-      text: "Excelente atención profesional. Los psicólogos son muy empáticos y comprensivos.",
-      rating: 5,
-      image: "/placeholder.svg?height=80&width=80",
-    },
-    {
-      name: "Ana Martínez",
-      text: "La orientación vocacional me ayudó a encontrar mi verdadera pasión profesional.",
-      rating: 5,
-      image: "/placeholder.svg?height=80&width=80",
-    },
-  ];
 
-  const nextTestimonial = () => {
-    setActiveTestimonial((prev) => (prev + 1) % testimonials.length);
-  };
 
-  const prevTestimonial = () => {
-    setActiveTestimonial(
-      (prev) => (prev - 1 + testimonials.length) % testimonials.length
-    );
-  };
+
 
   return (
     <div className="min-h-screen bg-background overflow-hidden">
@@ -200,7 +171,8 @@ export default function HomePage() {
             </div>
             <div>
               <h3 className="text-3xl font-bold font-serif mb-6 text-foreground">
-                Red de Psicólogos para personas de habla hispana, en cualquier lugar del mundo
+                Red de Psicólogos para personas de habla hispana, en cualquier
+                lugar del mundo
               </h3>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                 Cada persona es única, y por eso nuestro enfoque es
@@ -218,9 +190,7 @@ export default function HomePage() {
                 <div className="flex items-start space-x-3">
                   <MessageCircleHeart className="h-6 w-6 text-accent mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-foreground">
-                      Acompañamiento cercano
-                    </h4>
+                    <h4 className="font-semibold text-foreground">Cercania</h4>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
@@ -299,88 +269,8 @@ export default function HomePage() {
           <h3 className="text-3xl font-bold font-serif text-center mb-12 text-foreground">
             Nuestros Enfoques Terapéuticos
           </h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Card className="border-border hover:shadow-lg transition-all duration-300 transform hover:scale-105 group">
-              <CardHeader className="text-center">
-                <Brain className="h-12 w-12 text-primary mx-auto mb-4 group-hover:animate-pulse" />
-                <CardTitle className="font-serif">Psicoanalítico</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground text-center mb-4">
-                  Exploración profunda del inconsciente y los patrones de
-                  comportamiento.
-                </p>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="w-full border-primary text-primary hover:bg-primary/10 bg-transparent"
-                >
-                  Más Info <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="border-border hover:shadow-lg transition-all duration-300 transform hover:scale-105 group">
-              <CardHeader className="text-center">
-                <Users className="h-12 w-12 text-accent mx-auto mb-4 group-hover:animate-pulse" />
-                <CardTitle className="font-serif">
-                  Psicología Integrativa
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground text-center mb-4">
-                  Combinación de diferentes enfoques para un tratamiento
-                  personalizado.
-                </p>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="w-full border-accent text-accent hover:bg-accent/10 bg-transparent"
-                >
-                  Más Info <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="border-border hover:shadow-lg transition-all duration-300 transform hover:scale-105 group">
-              <CardHeader className="text-center">
-                <Heart className="h-12 w-12 text-primary mx-auto mb-4 group-hover:animate-pulse" />
-                <CardTitle className="font-serif">Terapia Sistémica</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground text-center mb-4">
-                  Enfoque en las relaciones y sistemas familiares y sociales.
-                </p>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="w-full border-primary text-primary hover:bg-primary/10 bg-transparent"
-                >
-                  Más Info <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="border-border hover:shadow-lg transition-all duration-300 transform hover:scale-105 group">
-              <CardHeader className="text-center">
-                <BookOpen className="h-12 w-12 text-accent mx-auto mb-4 group-hover:animate-pulse" />
-                <CardTitle className="font-serif">
-                  Orientación Vocacional
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground text-center mb-4">
-                  Guía profesional para decisiones académicas y laborales.
-                </p>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="w-full border-accent text-accent hover:bg-accent/10 bg-transparent"
-                >
-                  Más Info <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </CardContent>
-            </Card>
+          <div className="">
+            <ModelosCards />
           </div>
         </div>
       </section>
@@ -452,7 +342,8 @@ export default function HomePage() {
       <section id="formacion" className="py-20 px-4 bg-muted/30">
         <div className="container mx-auto">
           <h3 className="text-3xl font-bold font-serif text-center mb-12 text-foreground">
-            Formación Profesional
+            Formación Profesional{" "}
+            <span className="opacity-50">{`(En Preparacion)`}</span>
           </h3>
           <div className="grid md:grid-cols-3 gap-6">
             <Card className="border-border">
@@ -523,8 +414,8 @@ export default function HomePage() {
       <section>
         <PsychologyDivider />
       </section>
-
-      {/* Testimonials Section */}
+      {/*
+      Testimonials Section
       <section id="testimonios" className="py-20 px-4 bg-muted/30">
         <div className="container mx-auto">
           <h3 className="text-3xl font-bold font-serif text-center mb-12 text-foreground">
@@ -555,15 +446,19 @@ export default function HomePage() {
                     )}
                   </div>
                   <blockquote className="text-lg italic text-muted-foreground mb-4">
-                    `&quot;`{testimonials[activeTestimonial].text}`&quot;`
+                    &quot;{testimonials[activeTestimonial].text}&quot;
                   </blockquote>
                   <cite className="text-accent font-semibold">
                     — {testimonials[activeTestimonial].name}
                   </cite>
                 </CardContent>
               </Card>
+            </div>
+          </div>
+        </div>
+      </section>
 
-              {/* Navigation buttons */}
+              {/* Navigation buttons *
               <button
                 onClick={prevTestimonial}
                 className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-card border border-border rounded-full p-2 hover:bg-accent/10 transition-colors"
@@ -581,7 +476,7 @@ export default function HomePage() {
               </button>
             </div>
 
-            {/* Dots indicator */}
+            {/* Dots indicator *
             <div className="flex justify-center mt-6 space-x-2">
               {testimonials.map((_, index) => (
                 <button
@@ -599,7 +494,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
+*/}
       {/* Pricing Section */}
 
       {/* Enhanced Contact Section */}
@@ -640,11 +535,27 @@ export default function HomePage() {
                       WhatsApp disponible
                     </span>
                   </div>
+                    <a target="_blank" href="https://www.instagram.com/re.pensarse/" className="flex items-center space-x-3">
+                    <InstagramIcon className="h-5 w-5 text-accent" />
+                    <span className="text-muted-foreground hover:border-b">
+                      @re.pensarse
+                    </span>
+                  </a>
+                  <div className="flex items-center space-x-3">
+                    <HeartPulse className="h-8 w-8 text-accent" />
+                    <span className="text-muted-foreground">
+                      Agenda primer entrevista relacional con MEDICLOUD
+                    </span>
+                  </div>
+                    
                   <div className="flex items-center space-x-3">
                     <Mail className="h-5 w-5 text-accent" />
-                    <span className="text-muted-foreground">
+                    <a
+                      href="mailto:repensarse.online@gmail.com"
+                      className="text-muted-foreground hover:underline"
+                    >
                       repensarse.online@gmail.com
-                    </span>
+                    </a>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Clock className="h-5 w-5 text-accent" />
@@ -658,12 +569,12 @@ export default function HomePage() {
                       Servicios online para personas de habla Hispana
                     </span>
                   </div>
-                  <div className="pt-4 space-y-3">
-                    <Button className="w-full bg-green-600 hover:bg-green-700 text-white transform hover:scale-105 transition-all duration-300">
+                  <a target="_blank"  href="https://wa.me/541172497547" className="pt-4 space-y-3 cursor-pointer">
+                    <Button className="w-full cursor-pointer bg-green-600 hover:bg-green-700 text-white transform hover:scale-105 transition-all duration-300">
                       <MessageCircle className="mr-2 h-4 w-4" />
                       WhatsApp Directo
                     </Button>
-                  </div>
+                  </a>
                 </CardContent>
               </Card>
 
@@ -678,11 +589,14 @@ export default function HomePage() {
                     Agenda tu primera consulta para conocer nuestros servicios y
                     encontrar el profesional adecuado para ti.
                   </p>
-                  <div className="space-y-3">
+                  <div className="space-y-3 flex flex-col gap-2">
+                     <a className="mb-3" target="_blank"  href="https://wa.me/541172497547">
                     <Button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground transform hover:scale-105 transition-all duration-300">
                       <Calendar className="mr-2 h-4 w-4" />
                       Agendar Primera Entrevista
                     </Button>
+                     </a>
+                    <a         href="mailto:repensarse.online@gmail.com">
                     <Button
                       variant="outline"
                       className="w-full border-primary text-primary hover:bg-primary/10 bg-transparent transform hover:scale-105 transition-all duration-300"
@@ -690,6 +604,7 @@ export default function HomePage() {
                       <Mail className="mr-2 h-4 w-4" />
                       Enviar Consulta por Email
                     </Button>
+                    </a>
                   </div>
                 </CardContent>
               </Card>
@@ -709,13 +624,6 @@ export default function HomePage() {
             Comienza hoy mismo.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              size="lg"
-              className="bg-accent hover:bg-accent/90 text-accent-foreground transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
-            >
-              <Calendar className="mr-2 h-5 w-5" />
-              Agendar Ahora
-            </Button>
             <Button
               size="lg"
               variant="outline"
@@ -741,25 +649,10 @@ export default function HomePage() {
             Psicología online profesional, empática y personalizada
           </p>
           <div className="flex justify-center space-x-6 text-sm text-muted-foreground mb-6">
-            <span>psicorepensarseonline.com</span>
             <span>•</span>
             <span>repensarseonline.com</span>
           </div>
           <div className="flex items-center justify-center space-x-4">
-            <Button
-              variant="ghost"
-              size="sm"
-              className="hover:bg-accent/10 transform hover:scale-105 transition-all duration-300"
-            >
-              Términos y Condiciones
-            </Button>
-            <Button
-              variant="ghost"
-              size="sm"
-              className="hover:bg-accent/10 transform hover:scale-105 transition-all duration-300"
-            >
-              Política de Privacidad
-            </Button>
             <a
               href="https://forms.gle/sJm9GuZMWnbcxf7q6"
               className="hover:bg-accent/10 transform hover:scale-105 transition-all duration-300"
@@ -768,6 +661,7 @@ export default function HomePage() {
             </a>
           </div>
         </div>
+        <WhatsAppButton />
       </footer>
     </div>
   );
