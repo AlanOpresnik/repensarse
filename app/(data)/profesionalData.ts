@@ -18,7 +18,7 @@ export const profesionalData: Profesional[] = [
     cordinadora: true,
     nombre: "Lic. Lilians Dotti Quintana",
     imagen: "/lilians.jpeg",
-    universidad: "Universidad de la República (UdelaR)",
+    universidad: "Universidad de la República, Uruguay",
     especialidades: [
       "Docente de nivel Universitario y Secundario",
       "Formación en Grupos y en Terapia Sistémica",
@@ -38,7 +38,7 @@ export const profesionalData: Profesional[] = [
       "Especialista en Psicoterapia para  Adolescentes y Adultos (en curso)",
     ],
     curriculum:
-      "https://drive.google.com/file/d/1AIxYmCLD04azCnA-MZJSJSoq2n8ugI8d/view",
+      "https://drive.google.com/file/d/1y__FfWyiC7m_J-znKZAfxDhX9OKR-E9u/view?usp=sharing",
   },
   {
     cordinadora: false,

@@ -36,10 +36,6 @@ export default function HomePage() {
   const coordinadoras = profesionalData.filter((p) => p.cordinadora);
   const noCoordinadoras = profesionalData.filter((p) => !p.cordinadora);
 
-
-
-
-
   return (
     <div className="min-h-screen bg-background overflow-hidden">
       {/* Header */}
@@ -196,9 +192,7 @@ export default function HomePage() {
                 <div className="flex items-start space-x-3">
                   <Users className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-foreground">
-                      Confianza
-                    </h4>
+                    <h4 className="font-semibold text-foreground">Confianza</h4>
                   </div>
                 </div>
               </div>
@@ -311,9 +305,15 @@ export default function HomePage() {
                   Evaluaciones especializadas para descubrir tus aptitudes e
                   intereses profesionales.
                 </p>
-                <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
-                  Solicitar Test
-                </Button>
+                <a
+                  className="mb-3"
+                  target="_blank"
+                  href="https://wa.me/541172497547"
+                >
+                  <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
+                    Solicitar Test
+                  </Button>
+                </a>
               </CardContent>
             </Card>
 
@@ -329,8 +329,8 @@ export default function HomePage() {
                   Encuentros grupales e individuales, para explorar opciones
                   académicas y profesionales
                 </p>
-                <Button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
-                  Inscribirse
+                <Button disabled className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
+                  En preparacion
                 </Button>
               </CardContent>
             </Card>
@@ -535,7 +535,11 @@ export default function HomePage() {
                       WhatsApp disponible
                     </span>
                   </div>
-                    <a target="_blank" href="https://www.instagram.com/re.pensarse/" className="flex items-center space-x-3">
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/re.pensarse/"
+                    className="flex items-center space-x-3"
+                  >
                     <InstagramIcon className="h-5 w-5 text-accent" />
                     <span className="text-muted-foreground hover:border-b">
                       @re.pensarse
@@ -547,7 +551,7 @@ export default function HomePage() {
                       Agenda primer entrevista relacional con MEDICLOUD
                     </span>
                   </div>
-                    
+
                   <div className="flex items-center space-x-3">
                     <Mail className="h-5 w-5 text-accent" />
                     <a
@@ -569,7 +573,11 @@ export default function HomePage() {
                       Servicios online para personas de habla Hispana
                     </span>
                   </div>
-                  <a target="_blank"  href="https://wa.me/541172497547" className="pt-4 space-y-3 cursor-pointer">
+                  <a
+                    target="_blank"
+                    href="https://wa.me/541172497547"
+                    className="pt-4 space-y-3 cursor-pointer"
+                  >
                     <Button className="w-full cursor-pointer bg-green-600 hover:bg-green-700 text-white transform hover:scale-105 transition-all duration-300">
                       <MessageCircle className="mr-2 h-4 w-4" />
                       WhatsApp Directo
@@ -590,20 +598,24 @@ export default function HomePage() {
                     encontrar el profesional adecuado para ti.
                   </p>
                   <div className="space-y-3 flex flex-col gap-2">
-                     <a className="mb-3" target="_blank"  href="https://wa.me/541172497547">
-                    <Button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground transform hover:scale-105 transition-all duration-300">
-                      <Calendar className="mr-2 h-4 w-4" />
-                      Agendar Primera Entrevista
-                    </Button>
-                     </a>
-                    <a         href="mailto:repensarse.online@gmail.com">
-                    <Button
-                      variant="outline"
-                      className="w-full border-primary text-primary hover:bg-primary/10 bg-transparent transform hover:scale-105 transition-all duration-300"
+                    <a
+                      className="mb-3"
+                      target="_blank"
+                      href="https://wa.me/541172497547"
                     >
-                      <Mail className="mr-2 h-4 w-4" />
-                      Enviar Consulta por Email
-                    </Button>
+                      <Button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground transform hover:scale-105 transition-all duration-300">
+                        <Calendar className="mr-2 h-4 w-4" />
+                        Agendar Primera Entrevista
+                      </Button>
+                    </a>
+                    <a href="mailto:repensarse.online@gmail.com">
+                      <Button
+                        variant="outline"
+                        className="w-full border-primary text-primary hover:bg-primary/10 bg-transparent transform hover:scale-105 transition-all duration-300"
+                      >
+                        <Mail className="mr-2 h-4 w-4" />
+                        Enviar Consulta por Email
+                      </Button>
                     </a>
                   </div>
                 </CardContent>
@@ -617,7 +629,7 @@ export default function HomePage() {
       <section className="py-20 px-4 bg-gradient-to-r from-accent/10 to-primary/10">
         <div className="container mx-auto text-center max-w-3xl">
           <h3 className="text-3xl font-bold font-serif mb-6 text-foreground">
-            ¿Listo para Comenzar tu Proceso Psicoterapeutico?
+            ¿Listo para Comenzar tu Proceso Psicoterapéutico?
           </h3>
           <p className="text-xl text-muted-foreground mb-8">
             No esperes más. Tu bienestar y salud integral es nuestra prioridad.
