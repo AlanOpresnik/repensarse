@@ -197,7 +197,7 @@ export default function HomePage() {
                   <Users className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold text-foreground">
-                      Vínculo terapéutico.
+                      Confianza
                     </h4>
                   </div>
                 </div>
