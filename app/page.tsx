@@ -64,22 +64,22 @@ export default function HomePage() {
                 Profesionales
               </a>
               <a
-                href="#testimonios"
-                className="text-muted-foreground hover:text-accent transition-all duration-300 hover:scale-105"
-              >
-                Testimonios
-              </a>
-              <a
                 href="#contacto"
                 className="text-muted-foreground hover:text-accent transition-all duration-300 hover:scale-105"
               >
                 Contacto
               </a>
             </nav>
-            <Button className="bg-accent hover:bg-accent/90 text-accent-foreground transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
-              <Calendar className="mr-2 h-4 w-4" />
-              Primera Entrevista
-            </Button>
+            <a
+              href="https://wa.me/541172497547" // <-- cambia por tu número con código de país
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button className="bg-accent hover:bg-accent/90 text-accent-foreground transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+                <Calendar className="mr-2 h-4 w-4" />
+                Primera Entrevista
+              </Button>
+            </a>
           </div>
         </div>
       </header>
@@ -103,13 +103,19 @@ export default function HomePage() {
                 Orientación Vocacional y Ocupacional, y Proyectos de Vida.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in-up animation-delay-400">
-                <Button
-                  size="lg"
-                  className="bg-accent hover:bg-accent/90 text-accent-foreground transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+                <a
+                  href="https://wa.me/541172497547" // <-- cambia por tu número con código de país
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <MessageCircle className="mr-2 h-5 w-5" />
-                  Contactar por WhatsApp
-                </Button>
+                  <Button
+                    size="lg"
+                    className="bg-accent hover:bg-accent/90 text-accent-foreground transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+                  >
+                    <MessageCircle className="mr-2 h-5 w-5" />
+                    Contactar por WhatsApp
+                  </Button>
+                </a>
               </div>
             </div>
 
@@ -329,7 +335,10 @@ export default function HomePage() {
                   Encuentros grupales e individuales, para explorar opciones
                   académicas y profesionales
                 </p>
-                <Button disabled className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
+                <Button
+                  disabled
+                  className="w-full bg-accent hover:bg-accent/90 text-accent-foreground"
+                >
                   En preparacion
                 </Button>
               </CardContent>
