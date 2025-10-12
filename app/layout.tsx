@@ -18,11 +18,40 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "RE-PENSARSE - Psicología Online",
+  title: "RE-PENSARSE | Psicología Online para tu Bienestar Emocional",
+  icons: {
+    icon: '/favicon.ico'
+  },
   description:
-    "Servicios de psicología online profesional y empática. Terapia individual, orientación vocacional y más.",
-  generator: "v0.app",
-}
+    "Terapia psicológica online profesional y empática. Acompañamiento individual, orientación vocacional, ansiedad, autoestima, y más. Empezá tu camino de autoconocimiento con RE-PENSARSE.",
+  openGraph: {
+    title: "RE-PENSARSE | Psicología Online para tu Bienestar Emocional",
+    description:
+      "Terapia psicológica online profesional y empática. Acompañamiento individual, orientación vocacional, ansiedad, autoestima, y más.",
+    url: "https://www.repensarseonline.com",
+    siteName: "RE-PENSARSE | Psicología Online",
+    images: [
+      {
+        url: "https://www.repensarseonline.com/Logo.png",
+        width: 1200,
+        height: 630,
+        alt: "RE-PENSARSE - Psicología Online",
+      },
+    ],
+    locale: "es_AR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "RE-PENSARSE | Psicología Online para tu Bienestar Emocional",
+    description:
+      "Descubrí un espacio seguro y profesional para tu bienestar emocional. Terapia online accesible, humana y efectiva.",
+    images: [
+      "https://www.repensarseonline.com/Logo.png",
+    ],
+  },
+};
+
 
 export default function RootLayout({
   children,
