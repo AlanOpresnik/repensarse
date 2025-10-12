@@ -82,4 +82,19 @@ export const profesionalData: Profesional[] = [
     curriculum:
       "https://drive.google.com/file/d/1z-JZ0MqGuWAWFcXW9DMXJvx7TRtOEULF/view?usp=sharing",
   },
+   {
+    cordinadora: false,
+    nombre: "Prof. Lic. Mariela Andrea Arancibia",
+    imagen:
+      "https://res.cloudinary.com/db3krhfka/image/upload/v1760200294/WhatsApp_Image_2025-10-08_at_11.37.02_AM_tcanxd.jpg",
+    universidad:
+      "Facultad de Psicología | UBA ",
+    especialidades: [
+      " Psicóloga Clínica",
+      "Orientación TCC Integrativa",
+      "Docente Didáctica Especial y Práctica de la Enseñanza",
+    ],
+    curriculum:
+      "https://drive.google.com/file/d/1dnWgKLp3c025h9bzevk_RHCm_v6LoudS/view?usp=sharing",
+  },
 ];

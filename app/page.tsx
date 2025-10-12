@@ -556,9 +556,9 @@ export default function HomePage() {
                   </a>
                   <div className="flex items-center space-x-3">
                     <HeartPulse className="h-8 w-8 text-accent" />
-                    <span className="text-muted-foreground">
+                    <a target="_blank" href=" https://repensarseonline.medicloud.com.ar" className="text-muted-foreground hover:border-b">
                       Agenda primer entrevista relacional con MEDICLOUD
-                    </span>
+                    </a>
                   </div>
 
                   <div className="flex items-center space-x-3">
