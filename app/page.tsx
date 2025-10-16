@@ -16,7 +16,6 @@ import {
   Globe,
   MessageCircleHeart,
   InstagramIcon,
-  HeartPulse,
 } from "lucide-react";
 import { useState, useEffect } from "react";
 import Image from "next/image";
