@@ -69,6 +69,12 @@ export default function HomePage() {
               >
                 Contacto
               </a>
+              <a
+              href="https://forms.gle/sJm9GuZMWnbcxf7q6"
+              className="text-muted-foreground hover:text-accent transition-all duration-300 hover:scale-105"
+              >
+              Querés pertenecer a nuestra Red?
+            </a>
             </nav>
             <a
               href="https://wa.me/541172497547" // <-- cambia por tu número con código de país
@@ -150,8 +156,8 @@ export default function HomePage() {
           {/* Jung Quote */}
           <div className="mt-16 flex flex-col  w-full p-6 bg-card rounded-lg border border-border transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
             <blockquote className="text-lg italic text-muted-foreground font-medium">
-              `&quot;`Conoce todas las teorías, domina todas las técnicas, pero
-              al tocar un alma humana, sé apenas otra alma humana`&quot;`
+              &quot;Conoce todas las teorías, domina todas las técnicas, pero al
+              tocar un alma humana, sé apenas otra alma humana&quot;
             </blockquote>
             <cite className="text-accent flex items-end justify-end font-semibold mt-2  w-full">
               — Carl Jung
@@ -339,7 +345,7 @@ export default function HomePage() {
                   disabled
                   className="w-full bg-accent hover:bg-accent/90 text-accent-foreground"
                 >
-                  En preparacion
+                  En en preparación
                 </Button>
               </CardContent>
             </Card>
@@ -352,7 +358,7 @@ export default function HomePage() {
         <div className="container mx-auto">
           <h3 className="text-3xl font-bold font-serif text-center mb-12 text-foreground">
             Formación Profesional{" "}
-            <span className="opacity-50">{`(En Preparacion)`}</span>
+            <span className="opacity-50">{`(En preparación)`}</span>
           </h3>
           <div className="grid md:grid-cols-3 gap-6">
             <Card className="border-border">
@@ -505,12 +511,25 @@ export default function HomePage() {
       </section>
 */}
       {/* Pricing Section */}
+       {/* CTA Section */}
+       <section className="py-20 px-4 bg-gradient-to-r from-accent/10 to-primary/10">
+        <div className="container mx-auto text-center max-w-3xl">
+          <h3 className="text-3xl font-bold font-serif mb-6 text-foreground">
+            ¿Listo para Comenzar tu Proceso Psicoterapéutico?
+          </h3>
+          <p className="text-xl text-muted-foreground ">
+            No esperes más. Tu bienestar y salud integral es nuestra prioridad. <br/>
+            Comienza hoy mismo.
+          </p>
+
+        </div>
+      </section>
 
       {/* Enhanced Contact Section */}
       <section id="contacto" className="py-20 px-4">
         <div className="container mx-auto max-w-6xl">
           <h3 className="text-3xl font-bold font-serif text-center mb-12 text-foreground">
-            Contacto
+            Contactanos
           </h3>
           <div className="grid lg:grid-cols-3 gap-8">
             <div className="lg:col-span-1">
@@ -538,12 +557,6 @@ export default function HomePage() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <div className="flex items-center space-x-3">
-                    <MessageCircle className="h-5 w-5 text-accent" />
-                    <span className="text-muted-foreground">
-                      WhatsApp disponible
-                    </span>
-                  </div>
                   <a
                     target="_blank"
                     href="https://www.instagram.com/re.pensarse/"
@@ -554,12 +567,6 @@ export default function HomePage() {
                       @re.pensarse
                     </span>
                   </a>
-                  <div className="flex items-center space-x-3">
-                    <HeartPulse className="h-8 w-8 text-accent" />
-                    <a target="_blank" href=" https://repensarseonline.medicloud.com.ar" className="text-muted-foreground hover:border-b">
-                      Agenda primer entrevista relacional con MEDICLOUD
-                    </a>
-                  </div>
 
                   <div className="flex items-center space-x-3">
                     <Mail className="h-5 w-5 text-accent" />
@@ -589,7 +596,7 @@ export default function HomePage() {
                   >
                     <Button className="w-full cursor-pointer bg-green-600 hover:bg-green-700 text-white transform hover:scale-105 transition-all duration-300">
                       <MessageCircle className="mr-2 h-4 w-4" />
-                      WhatsApp Directo
+                     Consulta por WhatsApp
                     </Button>
                   </a>
                 </CardContent>
@@ -610,22 +617,14 @@ export default function HomePage() {
                     <a
                       className="mb-3"
                       target="_blank"
-                      href="https://wa.me/541172497547"
+                      href=" https://repensarseonline.medicloud.com.ar"
                     >
-                      <Button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground transform hover:scale-105 transition-all duration-300">
+                      <button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground transform hover:scale-105 transition-all p-4 flex gap-2 rounded-full items-center duration-300">
                         <Calendar className="mr-2 h-4 w-4" />
-                        Agendar Primera Entrevista
-                      </Button>
+                        <p className="text-sm">Agendar Entrevista con MediCloud</p>
+                      </button>
                     </a>
-                    <a href="mailto:repensarse.online@gmail.com">
-                      <Button
-                        variant="outline"
-                        className="w-full border-primary text-primary hover:bg-primary/10 bg-transparent transform hover:scale-105 transition-all duration-300"
-                      >
-                        <Mail className="mr-2 h-4 w-4" />
-                        Enviar Consulta por Email
-                      </Button>
-                    </a>
+
                   </div>
                 </CardContent>
               </Card>
@@ -634,28 +633,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 px-4 bg-gradient-to-r from-accent/10 to-primary/10">
-        <div className="container mx-auto text-center max-w-3xl">
-          <h3 className="text-3xl font-bold font-serif mb-6 text-foreground">
-            ¿Listo para Comenzar tu Proceso Psicoterapéutico?
-          </h3>
-          <p className="text-xl text-muted-foreground mb-8">
-            No esperes más. Tu bienestar y salud integral es nuestra prioridad.
-            Comienza hoy mismo.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-primary text-primary hover:bg-primary/10 transform hover:scale-105 transition-all duration-300 bg-transparent"
-            >
-              <MessageCircle className="mr-2 h-5 w-5" />
-              Consulta por WhatsApp
-            </Button>
-          </div>
-        </div>
-      </section>
+     
 
       {/* Footer */}
       <footer className="bg-card border-t border-border py-12 px-4">

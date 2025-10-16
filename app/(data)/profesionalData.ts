@@ -12,7 +12,7 @@ export const profesionalData: Profesional[] = [
       "Psicoterapia de Jóvenes, Adultos y Parejas. ",
     ],
     curriculum:
-      "https://drive.google.com/file/d/1Dqx5Ry_l2w_UZFCrFqVaiQkpgZsmCyK3/view",
+      "https://drive.google.com/file/d/1Dqx5Ry_l2w_UZFCrFqVaiQkpgZsmCyK3/view?usp=sharing",
   },
   {
     cordinadora: true,
