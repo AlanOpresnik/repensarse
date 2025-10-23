@@ -556,7 +556,11 @@ export default function HomePage() {
                   </a>
                   <div className="flex items-center space-x-3">
                     <HeartPulse className="h-8 w-8 text-accent" />
-                    <a target="_blank" href=" https://repensarseonline.medicloud.com.ar" className="text-muted-foreground hover:border-b">
+                    <a
+                      target="_blank"
+                      href=" https://repensarseonline.medicloud.com.ar"
+                      className="text-muted-foreground hover:border-b"
+                    >
                       Agenda primer entrevista relacional con MEDICLOUD
                     </a>
                   </div>
@@ -656,10 +660,20 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-section>
 
-     
-         <span>•</span>
+      <footer className="bg-card border-t border-border py-12 px-4">
+        <div className="container mx-auto text-center">
+          <div className="flex items-center justify-center space-x-2 mb-6">
+            <Heart className="h-6 w-6 text-accent animate-pulse" />
+            <h4 className="text-xl font-bold font-serif text-foreground">
+              RE-PENSARSE
+            </h4>
+          </div>
+          <p className="text-muted-foreground mb-4">
+            Psicología online profesional, empática y personalizada
+          </p>
+          <div className="flex justify-center space-x-6 text-sm text-muted-foreground mb-6">
+            <span>•</span>
             <span>repensarseonline.com</span>
           </div>
           <div className="flex items-center justify-center space-x-4">
