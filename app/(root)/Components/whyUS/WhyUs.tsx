@@ -35,10 +35,6 @@ export default function PsychologyDivider() {
 
             </ul>
 
-            {/* CTA Button */}
-            <button className="bg-[#cf6c51] hover:bg-orange-500 text-white font-semibold px-6 py-3 rounded-full transition-colors duration-200 shadow-lg">
-              Comenzar mi proceso
-            </button>
           </div>
 
           {/* Image Section */}
