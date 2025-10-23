@@ -332,7 +332,7 @@ export default function HomePage() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground text-center mb-4">
-                  Encuentros grupales e individuales, para explorar opciones
+                  Encuentros grupales e individuales para explorar opciones
                   académicas y profesionales
                 </p>
                 <Button
