@@ -150,8 +150,8 @@ export default function HomePage() {
           {/* Jung Quote */}
           <div className="mt-16 flex flex-col  w-full p-6 bg-card rounded-lg border border-border transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
             <blockquote className="text-lg italic text-muted-foreground font-medium">
-              `&quot;`Conoce todas las teorías, domina todas las técnicas, pero
-              al tocar un alma humana, sé apenas otra alma humana`&quot;`
+              &quot;Conoce todas las teorías, domina todas las técnicas, pero
+              al tocar un alma humana, sé apenas otra alma humana&quot;
             </blockquote>
             <cite className="text-accent flex items-end justify-end font-semibold mt-2  w-full">
               — Carl Jung
