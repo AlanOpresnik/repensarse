@@ -339,7 +339,7 @@ export default function HomePage() {
                   disabled
                   className="w-full bg-accent hover:bg-accent/90 text-accent-foreground"
                 >
-                  En preparacion
+                  En preparación
                 </Button>
               </CardContent>
             </Card>
@@ -352,7 +352,7 @@ export default function HomePage() {
         <div className="container mx-auto">
           <h3 className="text-3xl font-bold font-serif text-center mb-12 text-foreground">
             Formación Profesional{" "}
-            <span className="opacity-50">{`(En Preparacion)`}</span>
+            <span className="opacity-50">{`(En Preparación)`}</span>
           </h3>
           <div className="grid md:grid-cols-3 gap-6">
             <Card className="border-border">
