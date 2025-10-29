@@ -150,8 +150,8 @@ export default function HomePage() {
           {/* Jung Quote */}
           <div className="mt-16 flex flex-col  w-full p-6 bg-card rounded-lg border border-border transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
             <blockquote className="text-lg italic text-muted-foreground font-medium">
-              &quot;Conoce todas las teorías, domina todas las técnicas, pero
-              al tocar un alma humana, sé apenas otra alma humana&quot;
+              &quot;Conoce todas las teorías, domina todas las técnicas, pero al
+              tocar un alma humana, sé apenas otra alma humana&quot;
             </blockquote>
             <cite className="text-accent flex items-end justify-end font-semibold mt-2  w-full">
               — Carl Jung
@@ -504,7 +504,30 @@ export default function HomePage() {
         </div>
       </section>
 */}
-      {/* Pricing Section */}
+      {/* CTA Section */}
+      <section className="py-20 px-4 bg-gradient-to-r from-accent/10 to-primary/10">
+        <div className="container mx-auto text-center max-w-3xl">
+          <h3 className="text-3xl font-bold font-serif mb-6 text-foreground">
+            ¿Listo para Comenzar tu Proceso Psicoterapéutico?
+          </h3>
+          <p className="text-xl text-muted-foreground mb-8">
+            No esperes más. Tu bienestar y salud integral es nuestra prioridad.
+            Comienza hoy mismo.
+          </p>
+          <a href=" https://repensarseonline.medicloud.com.ar" target="_blank">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-primary text-primary hover:bg-primary/10 transform hover:scale-105 transition-all duration-300 bg-transparent"
+              >
+                <MessageCircle className="mr-2 h-5 w-5" />
+                Consulta por MediCloud
+              </Button>
+            </div>
+          </a>
+        </div>
+      </section>
 
       {/* Enhanced Contact Section */}
       <section id="contacto" className="py-20 px-4">
@@ -634,29 +657,6 @@ export default function HomePage() {
                 </CardContent>
               </Card>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20 px-4 bg-gradient-to-r from-accent/10 to-primary/10">
-        <div className="container mx-auto text-center max-w-3xl">
-          <h3 className="text-3xl font-bold font-serif mb-6 text-foreground">
-            ¿Listo para Comenzar tu Proceso Psicoterapéutico?
-          </h3>
-          <p className="text-xl text-muted-foreground mb-8">
-            No esperes más. Tu bienestar y salud integral es nuestra prioridad.
-            Comienza hoy mismo.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-primary text-primary hover:bg-primary/10 transform hover:scale-105 transition-all duration-300 bg-transparent"
-            >
-              <MessageCircle className="mr-2 h-5 w-5" />
-              Consulta por WhatsApp
-            </Button>
           </div>
         </div>
       </section>
