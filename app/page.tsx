@@ -63,6 +63,12 @@ export default function HomePage() {
               >
                 Profesionales
               </a>
+                 <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfbZiF2jS9RdauE7rIowrhXFb8NTApYgy7DYGGMbOFmmMHYvQ/viewform"
+                className="text-muted-foreground hover:text-accent transition-all duration-300 hover:scale-105"
+              >
+                Queres pertencer a nuestra Red?
+              </a>
               <a
                 href="#contacto"
                 className="text-muted-foreground hover:text-accent transition-all duration-300 hover:scale-105"
@@ -352,7 +358,7 @@ export default function HomePage() {
         <div className="container mx-auto">
           <h3 className="text-3xl font-bold font-serif text-center mb-12 text-foreground">
             Formación Profesional{" "}
-            <span className="opacity-50">{`(En Preparación)`}</span>
+            <span className="opacity-50">{`(en Preparación)`}</span>
           </h3>
           <div className="grid md:grid-cols-3 gap-6">
             <Card className="border-border">
@@ -561,12 +567,6 @@ export default function HomePage() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <div className="flex items-center space-x-3">
-                    <MessageCircle className="h-5 w-5 text-accent" />
-                    <span className="text-muted-foreground">
-                      WhatsApp disponible
-                    </span>
-                  </div>
                   <a
                     target="_blank"
                     href="https://www.instagram.com/re.pensarse/"
@@ -577,16 +577,6 @@ export default function HomePage() {
                       @re.pensarse
                     </span>
                   </a>
-                  <div className="flex items-center space-x-3">
-                    <HeartPulse className="h-8 w-8 text-accent" />
-                    <a
-                      target="_blank"
-                      href=" https://repensarseonline.medicloud.com.ar"
-                      className="text-muted-foreground hover:border-b"
-                    >
-                      Agenda primer entrevista relacional con MEDICLOUD
-                    </a>
-                  </div>
 
                   <div className="flex items-center space-x-3">
                     <Mail className="h-5 w-5 text-accent" />
@@ -616,7 +606,7 @@ export default function HomePage() {
                   >
                     <Button className="w-full cursor-pointer bg-green-600 hover:bg-green-700 text-white transform hover:scale-105 transition-all duration-300">
                       <MessageCircle className="mr-2 h-4 w-4" />
-                      WhatsApp Directo
+                      WhatsApp Disponible
                     </Button>
                   </a>
                 </CardContent>
@@ -634,16 +624,17 @@ export default function HomePage() {
                     encontrar el profesional adecuado para ti.
                   </p>
                   <div className="space-y-3 flex flex-col gap-2">
-                    <a
-                      className="mb-3"
-                      target="_blank"
-                      href="https://wa.me/541172497547"
-                    >
-                      <Button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground transform hover:scale-105 transition-all duration-300">
-                        <Calendar className="mr-2 h-4 w-4" />
-                        Agendar Primera Entrevista
-                      </Button>
-                    </a>
+                    <div className="flex gap-3 bg-[#7578F3] p-2 rounded-xl text-white">
+
+                      <HeartPulse className="h-12 w-12 text-white" />
+                      <a
+                        target="_blank"
+                        href=" https://repensarseonline.medicloud.com.ar"
+                        className="text-white hover:border-b"
+                      >
+                        Agenda primer entrevista relacional con MEDICLOUD
+                      </a>
+                    </div>
                     <a href="mailto:repensarse.online@gmail.com">
                       <Button
                         variant="outline"
