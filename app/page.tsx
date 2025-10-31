@@ -520,18 +520,7 @@ export default function HomePage() {
             No esperes más. Tu bienestar y salud integral es nuestra prioridad.
             Comienza hoy mismo.
           </p>
-          <a href=" https://repensarseonline.medicloud.com.ar" target="_blank">
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-primary text-primary hover:bg-primary/10 transform hover:scale-105 transition-all duration-300 bg-transparent"
-              >
-                <MessageCircle className="mr-2 h-5 w-5" />
-                Consulta por MediCloud
-              </Button>
-            </div>
-          </a>
+         
         </div>
       </section>
 
@@ -632,7 +621,7 @@ export default function HomePage() {
                         href=" https://repensarseonline.medicloud.com.ar"
                         className="text-white hover:border-b"
                       >
-                        Agenda primer entrevista relacional con MEDICLOUD
+                        Agenda primer entrevista con MEDICLOUD
                       </a>
                     </div>
                     <a href="mailto:repensarse.online@gmail.com">
